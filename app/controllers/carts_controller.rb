@@ -7,9 +7,9 @@ class CartsController < ApplicationController
     redirect_to items_path
   end
 
-  def show
-    @items = @cart.retrieve_items
-  end
+  # def show
+  #   @items = @cart.retrieve_items
+  # end
 
   def destroy
     @item = Item.find(params[:item_id])
